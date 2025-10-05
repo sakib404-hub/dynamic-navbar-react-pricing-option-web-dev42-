@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Link = () => {
+const Link = ({ route }) => {
     return (
-        <div>
-
-        </div>
+        <li>
+            {route.name}
+        </li>
     );
 };
 

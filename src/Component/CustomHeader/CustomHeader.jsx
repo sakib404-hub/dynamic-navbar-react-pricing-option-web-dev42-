@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Link from '../Link/Link';
 
 const CustomHeader = () => {
     const [routes, setRoute] = useState([]);
@@ -16,6 +17,15 @@ const CustomHeader = () => {
                 <h2 className='text-xl font-semibold'>Daisy Khala</h2>
             </div>
             <div>
+                <ul className='flex gap-10'>
+                    {
+                        routes.map((route) => {
+                            return <Link key={route.id} route={route}></Link>
+                        })
+                    }
+                </ul>
+            </div>
+            {/* <div>
                 <ul className='flex justify-center items-center gap-8'>
                     {
                         routes.map((route) => {
@@ -23,7 +33,7 @@ const CustomHeader = () => {
                         })
                     }
                 </ul>
-            </div>
+            </div> */}
             <div>
                 <button className='btn'>Join Now</button>
             </div>
