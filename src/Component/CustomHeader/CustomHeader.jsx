@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Link from '../Link/Link';
+import { Ban, Menu } from 'lucide-react';
+import { CiMenuFries } from "react-icons/ci";
+import { ImCancelCircle } from "react-icons/im";
 
 const CustomHeader = () => {
+
     const [routes, setRoute] = useState([]);
+    const [open, setOpen] = useState(true);
 
     useEffect(() => {
         fetch('../../../public/navbar.json')
@@ -11,17 +16,36 @@ const CustomHeader = () => {
             .catch((err) => console.log(err))
     }, [])
 
+    const handleMenuButtonClick = () => {
+        setOpen(!open)
+    }
+
+    const links = routes.map((route) => {
+        return <Link key={route.id} route={route}></Link>
+    });
+
+
     return (
-        <nav className='bg-gray-700 flex items-center justify-between px-6 py-4'>
-            <div>
+        <nav className='bg-gray-700 flex items-center justify-between px-6 py-4 mt-10'>
+            <div className='flex gap-2 items-center justify-center'>
+                <span onClick={() => { handleMenuButtonClick() }}>
+                    {
+                        open ? <Menu /> : <Ban />
+                    }
+                </span>
+                <ul className='lg:hidden block'>
+                    {
+                        links
+                    }
+                </ul>
+                {/* <CiMenuFries className='font-white text-2xl font-bold' /> */}
+                {/* <ImCancelCircle /> */}
                 <h2 className='text-xl font-semibold'>Daisy Khala</h2>
             </div>
             <div>
-                <ul className='flex gap-10'>
+                <ul className='hidden lg:flex gap-10'>
                     {
-                        routes.map((route) => {
-                            return <Link key={route.id} route={route}></Link>
-                        })
+                        links
                     }
                 </ul>
             </div>
