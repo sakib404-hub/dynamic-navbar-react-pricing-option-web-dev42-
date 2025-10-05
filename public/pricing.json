@@ -32,11 +32,27 @@
   },
   {
     "id": 3,
+    "plan": "Business",
+    "price": "$59/month",
+    "description": "Ideal for small to medium businesses that need more power.",
+    "features": [
+      "Everything in Pro",
+      "200 GB cloud storage",
+      "Unlimited team members",
+      "Dedicated support channel",
+      "Workflow automation tools",
+      "Advanced user permissions"
+    ],
+    "buttonText": "Choose Business",
+    "popular": false
+  },
+  {
+    "id": 4,
     "plan": "Enterprise",
     "price": "$99/month",
     "description": "Best for large organizations and enterprises.",
     "features": [
-      "Everything in Pro",
+      "Everything in Business",
       "Unlimited cloud storage",
       "Dedicated account manager",
       "Custom integrations",
