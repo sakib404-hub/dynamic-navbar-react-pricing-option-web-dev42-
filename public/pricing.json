@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "plan": "Basic",
+    "price": "$9/month",
+    "description": "Perfect for individuals just getting started.",
+    "features": [
+      "Access to basic tutorials",
+      "5 GB cloud storage",
+      "Email support",
+      "Single user access",
+      "Basic analytics dashboard"
+    ],
+    "buttonText": "Get Started",
+    "popular": false
+  },
+  {
+    "id": 2,
+    "plan": "Pro",
+    "price": "$29/month",
+    "description": "Great for growing teams and startups.",
+    "features": [
+      "Everything in Basic",
+      "50 GB cloud storage",
+      "Priority support",
+      "Up to 5 team members",
+      "Advanced analytics and reporting",
+      "Custom branding options"
+    ],
+    "buttonText": "Upgrade Now",
+    "popular": true
+  },
+  {
+    "id": 3,
+    "plan": "Enterprise",
+    "price": "$99/month",
+    "description": "Best for large organizations and enterprises.",
+    "features": [
+      "Everything in Pro",
+      "Unlimited cloud storage",
+      "Dedicated account manager",
+      "Custom integrations",
+      "24/7 phone and chat support",
+      "Team training and onboarding"
+    ],
+    "buttonText": "Contact Sales",
+    "popular": false
+  }
+]
