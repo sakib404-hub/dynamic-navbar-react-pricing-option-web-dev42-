@@ -4,6 +4,8 @@ import CustomHeader from './Component/CustomHeader/CustomHeader';
 import PricingContainer from './Component/PricingContainer/PricingContainer';
 import Loader from './Component/Loader/Loader';
 import ResultChart from './Component/ResultChart/ResultChart';
+import axios from 'axios';
+import MarksChart from './Component/MarksChart/MarksChart';
 
 // fetching the card information 
 const fetchPromise = async () => {
@@ -12,6 +14,9 @@ const fetchPromise = async () => {
 }
 //fteching the promise by calling the function
 const fetchPricingoptions = fetchPromise();
+
+const url = '../public/marks.json'
+const marksPromise = axios.get(url);
 
 
 const App = () => {
@@ -23,7 +28,12 @@ const App = () => {
         <PricingContainer
           fetchPricingoptions={fetchPricingoptions}></PricingContainer>
       </Suspense>
-      <ResultChart></ResultChart>
+      <div className='flex items-center justify-center p-4'>
+        <ResultChart></ResultChart>
+      </div>
+      <div>
+        <MarksChart marksPromise={marksPromise}></MarksChart>
+      </div>
     </div>
   );
 };

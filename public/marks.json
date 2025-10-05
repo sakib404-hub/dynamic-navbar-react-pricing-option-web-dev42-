@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Ariana Khan",
+    "marks": { "physics": 92, "chemistry": 58, "math": 75 }
+  },
+  {
+    "id": 2,
+    "name": "Rafiul Islam",
+    "marks": { "physics": 64, "chemistry": 78, "math": 88 }
+  },
+  {
+    "id": 3,
+    "name": "Nusrat Jahan",
+    "marks": { "physics": 81, "chemistry": 95, "math": 69 }
+  },
+  {
+    "id": 4,
+    "name": "Tanvir Ahmed",
+    "marks": { "physics": 72, "chemistry": 61, "math": 77 }
+  },
+  {
+    "id": 5,
+    "name": "Mehazabin Akter",
+    "marks": { "physics": 85, "chemistry": 70, "math": 90 }
+  },
+  {
+    "id": 6,
+    "name": "Fahim Rahman",
+    "marks": { "physics": 55, "chemistry": 82, "math": 66 }
+  },
+  {
+    "id": 7,
+    "name": "Sadia Noor",
+    "marks": { "physics": 97, "chemistry": 74, "math": 59 }
+  },
+  {
+    "id": 8,
+    "name": "Rashed Karim",
+    "marks": { "physics": 60, "chemistry": 68, "math": 53 }
+  },
+  {
+    "id": 9,
+    "name": "Tania Akhter",
+    "marks": { "physics": 79, "chemistry": 83, "math": 71 }
+  },
+  {
+    "id": 10,
+    "name": "Ibrahim Hossain",
+    "marks": { "physics": 88, "chemistry": 64, "math": 78 }
+  }
+]
