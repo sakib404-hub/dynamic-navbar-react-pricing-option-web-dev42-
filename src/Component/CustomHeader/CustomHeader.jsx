@@ -26,14 +26,16 @@ const CustomHeader = () => {
 
 
     return (
-        <nav className='bg-gray-700 flex items-center justify-between px-6 py-4 mt-10'>
+        <nav className='bg-gray-700 flex items-center justify-between px-6 py-4'>
             <div className='flex gap-2 items-center justify-center'>
-                <span onClick={() => { handleMenuButtonClick() }}>
+                <span onClick={() => { handleMenuButtonClick() }} className='lg:hidden block'>
                     {
                         open ? <Menu /> : <Ban />
                     }
                 </span>
-                <ul className='lg:hidden block'>
+                <ul className={`lg:hidden block absolute bg-amber-700 px-6 p-4 rounded-sm
+                    duration-1000
+                    ${open ? '-top-50' : 'top-15'}`}>
                     {
                         links
                     }
@@ -61,7 +63,7 @@ const CustomHeader = () => {
             <div>
                 <button className='btn'>Join Now</button>
             </div>
-        </nav>
+        </nav >
     );
 };
 

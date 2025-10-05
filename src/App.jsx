@@ -5,7 +5,7 @@ import CustomHeader from './Component/CustomHeader/CustomHeader';
 const App = () => {
   return (
     <div>
-      <Header></Header>
+      {/* <Header></Header> */}
       <CustomHeader></CustomHeader>
     </div>
   );
